@@ -7,29 +7,19 @@ public class Class1 {
 	 */
 
 	public static void main(String[] args) {
-		String [] myarray = {"akhila","hari","arya"};
-		String str="hello family";
-		int lenght = str.length();
-		System.out.println(lenght);
-		String uppercase = str.toUpperCase();
-		String lowercase = str.toLowerCase();
-		System.out.println(lowercase);
-		System.out.println(str.indexOf("h"));
-		
-		/*int index=0;
-		while (index<6) {
-			System.out.println(index);
-			index++;
-		}
-		
-		for (int index=0; index<6;index++) {
-		System.out.println(index);
-		}
-		*/
-		for (String index : myarray) {
-			System.out.println(index);
-		}
-	}}
+	name ("Hari", 30);
+	int sum =add (10,20,30);
+	int result = sum/2;
+	System.out.println("the result is :"  + result);
+	}
+	public static void name(String str, int age ) {
+	System.out.println("hello my name is " + str + " and my age is " + age);	
+	}
+	
+	public static int add (int a, int b,int c) {
+		return (a+b+c);
+	}
+}
 		
 		
 		
