@@ -7,7 +7,15 @@ public class Class1 {
 	 */
 
 	public static void main(String[] args) {
-		int [] myarray = {10,20,30,40};
+		String [] myarray = {"akhila","hari","arya"};
+		String str="hello family";
+		int lenght = str.length();
+		System.out.println(lenght);
+		String uppercase = str.toUpperCase();
+		String lowercase = str.toLowerCase();
+		System.out.println(lowercase);
+		System.out.println(str.indexOf("h"));
+		
 		/*int index=0;
 		while (index<6) {
 			System.out.println(index);
@@ -18,7 +26,7 @@ public class Class1 {
 		System.out.println(index);
 		}
 		*/
-		for (int index : myarray) {
+		for (String index : myarray) {
 			System.out.println(index);
 		}
 	}}
