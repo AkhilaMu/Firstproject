@@ -1,11 +1,33 @@
 package First;
 
 public class Hello {
-	public static int x;
-	public static int add (int a, int b) {
-		return (a+b);
-	}
-	public int sub (int a,  int b) {
-		return (a-b);
-	}
+int id;
+String name;
+int age;
+static int noofstudents=0;
+Hello (){
+	noofstudents++;
+}
+public static int getnoofstudents() {
+	return noofstudents;
+}
+
+public int getId() {
+	return id;
+}
+public void setId(int id) {
+	this.id = id;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public int getAge() {
+	return age;
+}
+public void setAge(int age) {
+	this.age = age;
+}
 }
