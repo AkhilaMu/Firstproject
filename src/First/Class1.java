@@ -2,6 +2,9 @@ package First;
 
 public class Class1 {
 	public static void main(String[] args) {
+		System.out.println(add(1,4));
+		System.out.println(add ("hello", " world"));
+	}
 	/*Student hari = new Student ();
 	hari.setAge(30);
 	hari.setId(5);
@@ -9,12 +12,15 @@ public class Class1 {
 	hari.setStatus("yes");
 	System.out.println(hari.getName() + " is" + hari.getAge() + " years old" + " id number is " + hari.getId());
 */
-	Cube c1= new Cube(); 
-	System.out.println(c1.cubedimensions());
+	public static int add (int a, int b) {
+		return(a+b);
+	}
+	public static String add (String a, String b) {
+		return (a+b);
+	}
 	
-	Cube c2= new Cube(2,2,2);
-	System.out.println(c2.cubedimensions());
-}}
+	
+}
 		
 		
 		
