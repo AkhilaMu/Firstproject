@@ -1,12 +1,11 @@
 package First;
 
-public class Class1 {
+public class Class1 extends Hello{
 	public static void main(String[] args) {
-	Hello h= new Hello ();
-	Hello h1= new Hello ();
-	Hello.add(5,6);
-	h.sub(6, 5);
-	h1.x=7;
+	Rectangle rtc = new Rectangle();
+	rtc.set_values(10,20);
+	System.out.println(rtc.area());
+	
 	
 	}	
 }
