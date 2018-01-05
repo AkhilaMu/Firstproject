@@ -1,22 +1,23 @@
 package Project;
-import java.util.ArrayList;
-import java.util.ListIterator;;
+import java.util.*;
 
+//hashset allows iterator--iterator only have an option like hasnext...
+//ListIterator have an option like hasnext() and hasprevious()
 public class Main {
 
 	public static void main(String[] args) {
-	ArrayList <String> lst = new ArrayList<String>();
-	lst.add("hari");
-	lst.add("akhila");
-	lst.add("arya");
-	lst.add("Naana");
-	ListIterator<String> li = lst.listIterator();
-	 while (li.hasNext())
-		 System.out.println(li.next());
-	 System.out.println("------------------------   ");
-	 while(li.hasPrevious())
-		 System.out.println(li.previous());
-	} 
+	HashSet <String> name= new HashSet<String>();
+	name.add("A");
+	name.add("B");
+	name.add("C");
+	Iterator <String> ls = name.iterator();
+while (ls.hasNext())
+		System.out.println(ls.next());
+
+	
+	
+		 
+	}
 	
 }
 
