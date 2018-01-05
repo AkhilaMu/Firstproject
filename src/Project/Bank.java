@@ -1,6 +1,6 @@
 package Project;
 
-public interface Bank {
+interface Bank {
 	int getinterestrate(); 
 	
 }
