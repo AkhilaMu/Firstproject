@@ -1,8 +1,7 @@
 package Project;
 
-public class Bank {
-	int getinterestrate() {
-		return 1;
-	}
+abstract public class Bank {
+	abstract int getinterestrate(); 
+	
 
 }
