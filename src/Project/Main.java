@@ -1,22 +1,21 @@
 package Project;
-import java.util.LinkedList;;
+import java.util.ArrayList;
+import java.util.ListIterator;;
 
 public class Main {
 
 	public static void main(String[] args) {
-		
-		LinkedList<Integer> list = new LinkedList<Integer>();
-		list.add(1);
-		list.add(2);
-		list.add(3);
-		list.addFirst(4);
-		list.removeLast();
-		//list.clear();
-for (int i :list)
-	System.out.println(i);
-
-		
-		
+	ArrayList <String> lst = new ArrayList<String>();
+	lst.add("hari");
+	lst.add("akhila");
+	lst.add("arya");
+	lst.add("Naana");
+	ListIterator<String> li = lst.listIterator();
+	 while (li.hasNext())
+		 System.out.println(li.next());
+	 System.out.println("------------------------   ");
+	 while(li.hasPrevious())
+		 System.out.println(li.previous());
 	} 
 	
 }
