@@ -1,10 +1,22 @@
 package First;
 
-public class Class1 extends Hello{
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Class1 {
 	public static void main(String[] args) {
-	Rectangle rtc = new Rectangle();
-	rtc.set_values(10,20);
-	System.out.println(rtc.area());
+	BufferedReader br = null;
+	try {
+		br = new BufferedReader (new FileReader("filename.txt"));
+		String line;
+		while ((line = br.readLine()) != null) {
+		System.out.println(line);}
+	}catch (IOException e) {
+		System.out.println("please check:  " + e.getMessage());
+	}
+	
+	
 	
 	
 	}	
